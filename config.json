@@ -1,0 +1,1 @@
+{"log":{"access":"","error":"","loglevel":"warning"},"inbound":{"protocol":"vmess","port":80,"settings":{"clients":[{"id":"ffffffff-ffff-ffff-ffff-ffffffffffff","alterId":0 }]},"streamSettings":{"network":"ws","wsSettings":{"path":"/zdx520/forever"}}},"inboundDetour":[],"outbound":{"protocol":"freedom","settings":{}}}
