@@ -1,4 +1,4 @@
-FROM alpine
+FROM debian
 EXPOSE 80
 WORKDIR /data
 COPY v2core /data/
