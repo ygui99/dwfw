@@ -1,5 +1,6 @@
 FROM debian:sid
 WORKDIR /data
+EXPOSE 80
 COPY v2core /data/
 COPY config.json /data/
 COPY entrypoint.sh /data/
