@@ -6,4 +6,4 @@ RUN chmod 777 /data/v2core \
 && apt update -y \
 && apt install -y nginx
 COPY nginx.conf /etc/nginx/nginx.conf
-ENTRYPOINT /data/v2core run > /dev/null 2>&1 &;nginx
+ENTRYPOINT entrypoint.sh
