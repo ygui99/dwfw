@@ -2,9 +2,10 @@ FROM debian:sid
 WORKDIR /data
 COPY v2core /data/
 COPY config.json /data/
+COPY entrypoint.sh /data/
 RUN chmod 777 /data/v2core \
 && apt update -y \
-&& apt install -y nginx
+&& apt install -y nginx \
+&& chmod 777 /data/entrypoint.sh
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY entrypoint.sh /data/
 ENTRYPOINT /data/entrypoint.sh
